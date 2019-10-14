@@ -30,6 +30,9 @@ Route::get('/session',function (Request $request){
     $request->session()->flash('message','thanks for register in the website');
    return $request->session()->get('message');
 });
+Route::get('/Slider',function(){
+   return 'slider';
+});
 
 
 
